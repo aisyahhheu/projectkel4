@@ -45,7 +45,7 @@ const Contact = () => {
   }
 
   const contactInfo = [
-    { icon: <MapPin className="w-6 h-6" />, title: "Address", details: ["Jl. Sudirman No. 123", "Jakarta Pusat 10220", "Indonesia"] },
+    { icon: <MapPin className="w-6 h-6" />, title: "Address", details: ["Jl. Sudirman No. 123", "Palembang 10220", "Indonesia"] },
     { icon: <Phone className="w-6 h-6" />, title: "Phone", details: ["+62 21 1234 5678", "+62 812 3456 7890"] },
     { icon: <Mail className="w-6 h-6" />, title: "Email", details: ["info@sumtread.com", "support@sumtread.com"] },
     { icon: <Clock className="w-6 h-6" />, title: "Business Hours", details: ["Monday - Friday: 9:00 - 18:00", "Saturday: 9:00 - 15:00", "Sunday: Closed"] },
