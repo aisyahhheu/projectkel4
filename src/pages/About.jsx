@@ -47,13 +47,13 @@ const About = () => {
     {
       name: "Muhamad Haekal Saleh",
       position: "Quality Manager",
-      image: "/artis1.jpg?height=300&width=300",
+      image: "/haikal.jpg?height=300&width=300",
       description: "Memastikan setiap produk memenuhi standar kualitas tertinggi sebelum sampai ke pelanggan.",
     },
     {
       name: "Renjiro Alief Daniswara",
       position: "Quality Manager",
-      image: "/artis2.jpg?height=300&width=300",
+      image: "/jiro.jpg?height=300&width=300",
       description: "Memastikan setiap produk memenuhi standar kualitas tertinggi sebelum sampai ke pelanggan.",
     },
   ]

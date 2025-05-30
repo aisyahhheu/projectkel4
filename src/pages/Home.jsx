@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom"
-import { ArrowRight, Star, Truck, Shield, Headphones } from "lucide-react"
+import { Link } from "react-router-dom";
+import { ArrowRight, Star, Truck, Shield, Headphones } from "lucide-react";
 
 const Home = () => {
   const featuredProducts = [
     {
-      id: 1,
+       id: 1,
       name: "Urban Runner Pro",
       category: "dewasa",
       price: "Rp 899.000",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/dewasa3.jpg?height=300&width=300",
       rating: 4.8,
       reviews: 124,
     },
@@ -17,7 +17,7 @@ const Home = () => {
       name: "Kids Adventure",
       category: "anak",
       price: "Rp 459.000",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/anak62.jpg?height=300&width=300",
       rating: 4.9,
       reviews: 89,
     },
@@ -26,11 +26,11 @@ const Home = () => {
       name: "Classic Comfort",
       category: "dewasa",
       price: "Rp 749.000",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/dewasa6.jpg?height=300&width=300",
       rating: 4.7,
       reviews: 156,
     },
-  ]
+  ];
 
   const features = [
     {
@@ -48,7 +48,7 @@ const Home = () => {
       title: "24/7 Support",
       description: "Customer service siap membantu kapan saja",
     },
-  ]
+  ];
 
   return (
     <div>
@@ -103,8 +103,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="text-center p-6 bg-white rounded-lg shadow-md">
-                <div className="text-blue-600 mb-4 flex justify-center">{feature.icon}</div>
+              <div
+                key={index}
+                className="text-center p-6 bg-white rounded-lg shadow-md"
+              >
+                <div className="text-blue-600 mb-4 flex justify-center">
+                  {feature.icon}
+                </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
@@ -117,8 +122,12 @@ const Home = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Products</h2>
-            <p className="text-lg text-gray-600">Koleksi sepatu pilihan terbaik kami</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Featured Products
+            </h2>
+            <p className="text-lg text-gray-600">
+              Koleksi sepatu pilihan terbaik kami
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -149,9 +158,13 @@ const Home = () => {
                         />
                       ))}
                     </div>
-                    <span className="text-sm text-gray-600 ml-2">({product.reviews} reviews)</span>
+                    <span className="text-sm text-gray-600 ml-2">
+                      ({product.reviews} reviews)
+                    </span>
                   </div>
-                  <p className="text-2xl font-bold text-blue-600 mb-4">{product.price}</p>
+                  <p className="text-2xl font-bold text-blue-600 mb-4">
+                    {product.price}
+                  </p>
                   <div className="flex space-x-2">
                     <Link
                       to={`/product-detail/${product.id}`}
@@ -159,9 +172,12 @@ const Home = () => {
                     >
                       Detail
                     </Link>
-                    <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    <Link
+                      to="/contact"
+                      className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors text-center"
+                    >
                       Buy Now
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -183,9 +199,12 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Step Up Your Style?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Ready to Step Up Your Style?
+          </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Bergabunglah dengan ribuan pelanggan yang telah merasakan kenyamanan sepatu Sumtread
+            Bergabunglah dengan ribuan pelanggan yang telah merasakan kenyamanan
+            sepatu Sumtread
           </p>
           <Link
             to="/product"
@@ -197,7 +216,7 @@ const Home = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

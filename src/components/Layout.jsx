@@ -181,7 +181,7 @@ const Layout = () => {
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@sumtread.com</li>
                 <li>Phone: +62 123 456 789</li>
-                <li>Address: Jakarta, Indonesia</li>
+                <li>Address: Palembang, Indonesia</li>
               </ul>
             </div>
           </div>
